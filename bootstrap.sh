@@ -1,11 +1,12 @@
 #!/bin/bash
-# This file will be run as root. It installs Octave for Ubuntu. 
+# This file will be run as root. It installs Octave for Ubuntu.
 
 # add octave repository
 add-apt-repository ppa:octave/stable
 
-# rebuild repository list 
+# rebuild repository list
 apt-get update
 
-# install -y octave 
+# install -y octave
 apt install -y octave
+apt install -y liboctave-dev

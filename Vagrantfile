@@ -13,4 +13,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.ssh.forward_agent = true
   config.ssh.forward_x11 = true
   config.vm.provision "shell", path: "bootstrap.sh"
+  config.vm.synced_folder "oct/", "/home/vagrant/work"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
 end
