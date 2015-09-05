@@ -44,10 +44,3 @@ alphas = chunk_influence(states_speaking, 2)
 ```
 
 
-
-
-
-
-d
-d
-d
